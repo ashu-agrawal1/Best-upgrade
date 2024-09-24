@@ -14,9 +14,9 @@
             <label for="upgrade-name">Name:</label>
             <input type="text" id="upgrade-name" placeholder="Upgrade Name">
             <label for="coins-per-hour">Coins per Hour Increase:</label>
-            <input type="number" id="coins-per-hour" placeholder="Coins per Hour">
+            <input type="text" id="coins-per-hour" placeholder="Coins per Hour (e.g., 1k, 1m)">
             <label for="cost">Cost:</label>
-            <input type="number" id="cost" placeholder="Cost">
+            <input type="text" id="cost" placeholder="Cost (e.g., 1k, 1m)">
             <button onclick="addUpgrade()">Add Upgrade</button>
         </div>
         
@@ -34,6 +34,7 @@
                         <th>Name</th>
                         <th>Coins per Hour</th>
                         <th>Cost</th>
+                        <th>Efficiency</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
