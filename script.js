@@ -15,7 +15,7 @@ function renderUpgrades() {
     const table = document.getElementById('upgrade-table');
     table.innerHTML = '';
     upgrades.forEach((upgrade, index) => {
-        const efficiency = (upgrade.coinsPerHour / upgrade.cost).toFixed(2);
+        const efficiency = (upgrade.cost / upgrade.coinsPerHour).toFixed(4);
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${upgrade.name}</td>
