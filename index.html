@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Upgrade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Upgrade Calculator</h1>
+        <div id="add-upgrade">
+            <h2>Add Upgrade</h2>
+            <label for="upgrade-name">Name:</label>
+            <input type="text" id="upgrade-name" placeholder="Upgrade Name">
+            <label for="coins-per-hour">Coins per Hour Increase:</label>
+            <input type="number" id="coins-per-hour" placeholder="Coins per Hour">
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" placeholder="Cost">
+            <button onclick="addUpgrade()">Add Upgrade</button>
+        </div>
+        
+        <div id="upload-section">
+            <h2>Upload Upgrades</h2>
+            <input type="file" id="file-input">
+            <button onclick="uploadUpgrades()">Upload</button>
+        </div>
+
+        <div id="upgrades-list">
+            <h2>Upgrades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Coins per Hour</th>
+                        <th>Cost</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="upgrade-table">
+                    <!-- Dynamic upgrade rows go here -->
+                </tbody>
+            </table>
+        </div>
+
+        <button onclick="sortUpgrades()">Sort by Efficiency</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
